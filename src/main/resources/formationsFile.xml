@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formations>
+    <formation>
+        <code>SPRINGBASE01</code>
+        <libelle>blabla</libelle>
+        <descriptif>blablablablablabla</descriptif>
+    </formation>
+    <formation>
+        <code>SPRINGBATCH01</code>
+        <libelle>blabla</libelle>
+        <descriptif>blablablablablabla</descriptif>
+    </formation>
+    <formation>
+        <code>SPRINGBOOT01</code>
+        <libelle>blabla</libelle>
+        <descriptif>blablablablablabla</descriptif>
+    </formation>
+</formations>

@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: test
+    password: test
+    platform: mysql
+    initialization-mode: always
+
+  batch:
+    initialize-schema: never
+
+  mail:
+    host: localhost
+    port: 2525
+    username: test@test.com
+    password: test
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
