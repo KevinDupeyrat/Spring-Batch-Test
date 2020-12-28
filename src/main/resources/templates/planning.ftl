@@ -95,14 +95,13 @@ https://divtable.com/table-styler/
         </tr>
         </thead>
         <tbody>
-
         <#list seances as item>
             <tr>
                 <td style="width: 208.85px;">${item.libelleFormation}</td>
                 <td>${item.dateDebutFormation}</td>
                 <td>${item.dateFinFormation}</td>
             </tr>
-        <#list>
+        </#list>
         </tbody>
     </table>
 
