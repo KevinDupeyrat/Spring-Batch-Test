@@ -30,7 +30,7 @@ public class PlanningStepConfig {
         return new JdbcCursorItemReaderBuilder<Planning>()
                 .name("planningItemReader")
                 .dataSource(dataSource)
-                .sql("select distinct f.* formateurs j join seances s on f.id=s.id_formateur")
+                .sql("select distinct f.* from formateurs f join seances s on f.id=s.id_formateur")
                 .rowMapper(new PlanningRowMapper())
                 .build();
     }
