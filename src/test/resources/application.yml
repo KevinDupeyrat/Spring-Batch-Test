@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    platform: h2
+
+  batch:
+    job:
+      enabled: false
+
+logging:
+  level:
+    org:
+      springframework: DEBUG
