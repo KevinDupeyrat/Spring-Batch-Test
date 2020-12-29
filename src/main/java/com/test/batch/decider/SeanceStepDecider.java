@@ -10,7 +10,7 @@ public class SeanceStepDecider implements JobExecutionDecider {
 
     @Override
     public FlowExecutionStatus decide(JobExecution jobExecution, StepExecution stepExecution) {
-        if (StringUtils.endsWithIgnoreCase(stepExecution.getJobParameters().getString("seancesFile"),
+        if (StringUtils.endsWithIgnoreCase(jobExecution.getJobParameters().getString("seancesFile"),
                 "txt")) {
             return new FlowExecutionStatus("txt");
         }
