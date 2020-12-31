@@ -6,6 +6,10 @@ spring:
     job:
       enabled: false
 
+  mail:
+    host: localhost
+    port: 2525
+
 logging:
   level:
     org:

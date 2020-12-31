@@ -133,7 +133,7 @@ public class ChargementSeanceTxtStepConfig {
      */
     @Bean
     public Step chargementSeanceTxtStep(final StepBuilderFactory stepBuilderFactory) {
-        return stepBuilderFactory.get("chargementFormationStep")
+        return stepBuilderFactory.get("chargementSeanceTxtStep")
                 .<Seance, Seance>chunk(2)
                 .reader(seanceTxtItemReader(null))
                 .writer(sceanceItemWriter(null))
@@ -152,7 +152,7 @@ public class ChargementSeanceTxtStepConfig {
      */
     @Bean
     public Step chargementSeanceCsvStep(StepBuilderFactory stepBuilderFactory) {
-        return stepBuilderFactory.get("chargementFormateurStep")
+        return stepBuilderFactory.get("chargementSeanceCsvStep")
                 .<Seance, Seance>chunk(2)
                 .reader(seanceCsvItemReader(null))
                 .writer(sceanceItemWriter(null))
