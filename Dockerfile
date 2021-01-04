@@ -4,7 +4,7 @@ COPY . /app/
 
 RUN cd /app && mvn clean install
 
-FROM openjdk:11-jre
+FROM openjdk:11-jre-slim
 
 COPY --from=build /app/target/*.jar /app/app.jar
 
